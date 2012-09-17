@@ -1,10 +1,12 @@
 public class HelloWorld {
   public static void main(String[] args) {
-    printMessage("Hello World!");
-	printMessage("Exit!");
+    final String MAIN_MESSAGE = "Hello World!";
+    final String EXIT_MESSAGE = "Exit";
+    printMessage(MAIN_MESSAGE);
+    printMessage(EXIT_MESSAGE);
   }
   
-  public static void printMessage(String message) {
+  public static void printMessage(final String message) {
 	System.out.println(message);
   }
 }
